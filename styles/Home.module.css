@@ -1,0 +1,141 @@
+.main {
+  padding: 10rem 0 10rem 30rem;
+  background: #1D1E22;
+  color: white;
+}
+
+.main_landing {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+
+.main_landing img {
+  height: 40rem;
+}
+
+.main_heading {
+  display: flex;
+}
+
+.main_heading h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  margin-right: 1.5rem;
+}
+
+.main_landing p {
+  font-size: 1.5rem;
+  width: 40vw;
+  margin-top: 2rem;
+  color: #6E758D;
+}
+
+.main_heading2 {
+  width: 30vw;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 3rem;
+  margin-right: 3rem;
+  /* justify-content: space-around; */
+}
+
+.card{
+  background: #2C303A;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.card h1{
+  font-size: 2rem;
+  /* max-width: 20rem; */
+  color: #47ce72;
+}
+
+.card p{
+  font-size: 1.5rem;
+  /* margin-bottom: 6rem; */
+}
+
+.card .link{
+  background: #454856;
+  display: inline;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 5rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .link:hover{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card a{
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.card a:hover{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card .link:hover{
+  cursor: pointer;
+  background: #202125;
+}
+
+.main_landing_phone{
+  display: none;
+}
+
+.done{
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width: 700px) {
+  .main {
+    padding: 10rem 3rem;
+  }
+
+  .main_landing_phone{
+    display: block;
+  }
+
+  .main_landing_phone h1{
+    font-size: 5rem;
+  }
+
+  .main_landing_phone p{
+    font-size: 2rem;
+    color: #6E758D;
+  }
+
+  .grid{
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    margin-top: 10rem;
+  }
+
+  .main_landing{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .main{
+    padding: 10rem 0 10rem 40rem;
+  }
+}
